@@ -37,23 +37,23 @@
                             <a href="#tab1" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="true">Versi</a>
                         </li>
                         <li role="presentation">
-                            <a href="#tab2" role="tab" data-toggle="tab" aria-controls="tab2" aria-expanded="false">SPPK</a>
+                            <a href="#tab2" role="tab" data-toggle="tab" aria-controls="tab2" aria-expanded="false">SPK</a>
                         </li>
                         <li role="presentation">
-                            <a href="#tab3" role="tab" data-toggle="tab" aria-controls="tab3" aria-expanded="false">SAW</a>
+                            <a href="#tab3" role="tab" data-toggle="tab" aria-controls="tab3" aria-expanded="false">TOPSIS</a>
                         </li>
                     </ul>
                     <div id="tab-content" class="tab-content">
                         <div role="tabpanel" class="tab-pane fade active in" id="tab1" aria-labelledby="tab1">
-                            <center><p>SPPK Pemilihan Gitar Elektrik</p></center>
+                            <center><p>SPK Pemilihan Gitar Elektrik</p></center>
                             <center><p>V.1.0</p></center>
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab2">
-                            <p>SPPK adalah singkatan dari Sstem Pendukung Pengambilan Keputusan</p>
+                            <p>SPK adalah singkatan dari Sstem Pendukung Keputusan</p>
                             <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters readable English.</p>
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="tab3">
-                            <p>Metode SAW adalah salah satu metode dalam SPPK</p>
+                            <p>Metode TOPSIS adalah salah satu metode dalam SPK</p>
                             <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters readable English.</p>
                         </div>
                     </div>

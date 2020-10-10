@@ -136,11 +136,12 @@ class Nilai{
 		$stmt->execute();
 
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
-		
+		if($row) {
 		// $this->in = $row['id_nilai'];
 		// $this->merk = $row['merk'];
 		// $this->kk = $row['nama_kri'];
 		$this->nilai = $row['nilai'];
+		}
 	}
 
 	// update the product

@@ -95,7 +95,7 @@ class Alternatif{
 		$stmt->execute();
 
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
-		
+		if($row){
 		$this->id_gitar = $row['id_gitar'];
 		$this->merk = $row['merk'];
 		$this->jeniskayu = $row['jeniskayu'];
@@ -104,7 +104,7 @@ class Alternatif{
 		$this->deskripsi = $row['deskripsi'];
 		$this->foto = $row['foto'];
 	}
-	
+}
 	// update the product
 	function update(){
 

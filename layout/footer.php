@@ -5,11 +5,11 @@
                 Designed by <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>
             </div>
             <div class="col-sm-4">
-                <center>Tugas Akhir &copy; 2017</center>
+                <center>Tugas Akhir &copy; 2020</center>
             </div>
             <div class="col-sm-4">
                 <ul class="social-icons">
-                    <li><a target="_blank" href="https://www.instagram.com/titushatmaji/?hl=id"><i class="fa fa-instagram"></i> @titushatmaji</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/plikipie"><i class="fa fa-instagram"></i> @plikipie</a></li>
                 </ul>
             </div>
         </div>

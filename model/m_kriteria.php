@@ -7,7 +7,7 @@ class Kriteria{
 	public $kode_kri;
 	public $nama_kri;
 	public $tipe_kri;
-	
+
 	public $hasilkode;
 	
 	public function __construct($db){
@@ -22,7 +22,6 @@ class Kriteria{
 		$stmt->bindParam(2, $this->nama_kri);
 		$stmt->bindParam(3, $this->tipe_kri);
 		if($stmt->execute()){
-			
 			return true;
 		}else{
 			return false;
@@ -49,20 +48,22 @@ class Kriteria{
 	}
 	
 	// used when filling up the update product form
-	function readOne(){
-		
-		$query = "SELECT * FROM " . $this->table_name . " WHERE kode_kri=? LIMIT 0,1";
+	function readOne() {
+			$query = "SELECT * FROM " . $this->table_name . " WHERE kode_kri=? LIMIT 0,1";
+			
+			$stmt = $this->conn->prepare( $query );
+			$stmt->bindParam(1, $this->kode_kri);
+			$stmt->execute();
 
-		$stmt = $this->conn->prepare( $query );
-		$stmt->bindParam(1, $this->kode_kri);
-		$stmt->execute();
-
-		$row = $stmt->fetch(PDO::FETCH_ASSOC);
-		
-		$this->kode_kri = $row['kode_kri'];
-		$this->nama_kri = $row['nama_kri'];
-		$this->tipe_kri = $row['tipe_kri'];
-	}
+			$row = $stmt->fetch(PDO::FETCH_ASSOC);
+			if($row){
+			  $this->kode_kri = $row['kode_kri'];
+			  $this->nama_kri = $row['nama_kri'];
+			  $this->tipe_kri = $row['tipe_kri'];
+			}
+			
+		  }
+	
 	
 	// update the product
 	function update(){
